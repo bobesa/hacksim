@@ -391,15 +391,6 @@ namespace hacksim {
 #pragma mark Main
 
 int main(int argc, char** argv) {
-    
-    if(false) {
-    //Run processing object
-    hacksim::HackSimProcessing* p = new hacksim::HackSimProcessingBinary();
-    p->run();
-    delete p;
-    return 1;
-    }
-    
     int acceleration = argc >= 2 ? atoi(argv[1]) : DEFAULT_ACCELERATION;
     
     hacksim::HackSim* sim = new hacksim::HackSimLangC(acceleration);
